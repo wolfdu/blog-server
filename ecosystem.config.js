@@ -20,8 +20,8 @@ module.exports = {
       host: '47.96.160.254',
       ref: 'origin/master',
       repo: 'git@github.com:wolfdu/blog-server.git',
-      path: '/home/wolfdu/project',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
+      path: '/home/wolfdu/project/blog-serve',
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --env production'
     }
   }
 }
