@@ -7,6 +7,7 @@
   "scripts": {
     "dev-server": "cross-env NODE_ENV=development supervisor --harmony server/index.js",
     "server": "cross-env NODE_ENV=production supervisor --harmony server/index.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
     "lint": "eslint --ext .js"
   },
   "dependencies": {

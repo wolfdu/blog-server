@@ -6,7 +6,13 @@ module.exports = {
   apps: [
     {
       name: 'blog-server',
-      script: './server/index.js'
+      script: './server/index.js',
+      env: {
+        COMMON_VARIABLE: 'true'
+      },
+      env_production: {
+        NODE_ENV: 'production'
+      }
     }
   ],
 
