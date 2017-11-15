@@ -21,7 +21,7 @@ module.exports = {
       ref: 'blog-server/master', // 远端名称/分支或主干
       repo: 'git@github.com:wolfdu/blog-server.git', // 仓库地址
       path: '/home/wolfdu/project/blog-server',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --env production',
       'env': {
         'NODE_ENV': 'production'
       }
