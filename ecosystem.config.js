@@ -6,7 +6,7 @@ module.exports = {
   apps: [
     {
       name: 'blog-server',
-      script: './server/index.js'
+      script: './server'
     }
   ],
 
