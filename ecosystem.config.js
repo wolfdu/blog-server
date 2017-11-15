@@ -5,7 +5,7 @@ module.exports = {
    */
   apps: [
     {
-      name: 'blog-server',
+      name: 'blogServer',
       script: './server'
     }
   ],
@@ -16,10 +16,10 @@ module.exports = {
    */
   deploy: {
     production: {
-      user: 'wolfdu', // 登录远程服务器用户名
-      host: '47.96.160.254', // 服务器ip
-      ref: 'blog-server/master', // 远端名称/分支或主干
-      repo: 'git@github.com:wolfdu/blog-server.git', // 仓库地址
+      user: 'wolfdu',
+      host: '47.96.160.254',
+      ref: 'origin/master',
+      repo: 'git@github.com:wolfdu/blog-server.git',
       path: '/home/wolfdu/project/blog-server',
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
     }
