@@ -1,6 +1,6 @@
 module.exports = {
   mongoConfig: {
-    url: 'mongodb://47.96.160.254:27017/blog-production',
+    url: 'mongodb://localhost/blog-production',
     opts: {
       user: '',
       pass: ''
